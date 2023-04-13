@@ -93,33 +93,33 @@ if __name__ == '__main__':
 
     speed, angle = 0,0
 
-    # cv2.imwrite('track.jpg', track_map)
+    cv2.imwrite('track.jpg', track_map)
     cv2.imshow('track', track_map)
     cv2.waitKey(0)
-    # x, y = start_point
-    # angle_point = 0
-    # while speed != 100:
-    #     angle = float(input('angle:'))
-    #     speed = float(input('speed:'))
-    #     car_image = cv2.imread('../car.png')
-    #     car_image = cv2.resize(car_image, (10,10))
-    #
-    #     x,y, angle_point = control_position(x,y,angle_point, angle,speed)
-    #     print(x, y, angle_point)
-    #     local_area = track_map[y-local_h:y+local_h, x-local_w:x+local_w]
-    #     local_area = rotate_image(local_area, angle_point)
-    #
-    #     c_h, c_w,_ = car_image.shape
-    #     a_h, a_w,_ = local_area.shape
-    #
-    #     x_offset = int((a_w - c_w) / 2)
-    #     y_offset = int((a_h - c_h) / 2)
-    #
-    #     local_area[y_offset:y_offset+c_h,x_offset:x_offset+c_w] = car_image
-    #
-    #     vision_image = local_area[int(a_h/2-112):int(a_h/2+112), int(a_w/2):int(a_w/2+224)]
-    #     cv2.imshow('area', local_area)
-    #     cv2.waitKey(0)
-    #     cv2.imshow('area', vision_image)
-    #     cv2.waitKey(0)
+    x, y = start_point
+    angle_point = 0
+    while speed != 100:
+        angle = float(input('angle:'))
+        speed = float(input('speed:'))
+        car_image = cv2.imread('../car.png')
+        car_image = cv2.resize(car_image, (10,10))
+
+        x,y, angle_point = control_position(x,y,angle_point, angle,speed)
+        print(x, y, angle_point)
+        local_area = track_map[y-local_h:y+local_h, x-local_w:x+local_w]
+        local_area = rotate_image(local_area, angle_point)
+
+        c_h, c_w,_ = car_image.shape
+        a_h, a_w,_ = local_area.shape
+
+        x_offset = int((a_w - c_w) / 2)
+        y_offset = int((a_h - c_h) / 2)
+
+        local_area[y_offset:y_offset+c_h,x_offset:x_offset+c_w] = car_image
+
+        vision_image = local_area[int(a_h/2-112):int(a_h/2+112), int(a_w/2):int(a_w/2+224)]
+        cv2.imshow('area', local_area)
+        cv2.waitKey(0)
+        cv2.imshow('area', vision_image)
+        cv2.waitKey(0)
 
