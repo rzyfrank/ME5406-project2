@@ -6,6 +6,6 @@ The goal of our project is to train the carts to move forward on the straights, 
 ## Installation
 Clone this repository and navigate to it in your terminal. Then run:
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
