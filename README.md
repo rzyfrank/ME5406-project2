@@ -24,3 +24,4 @@ bash main.sh x
 
 x means how many episodes you want in the training process. If you are running the testing process, you can choose any x.
 
+You can set ip this run in `main.sh`. you should set `--type Train` for training or set `--type Test` for testing. You can select to algorithm '--algorithm DQN'. We support DQN, DoubleDQN and DuelingDQN in our code. You can use `--resume_checkpoint path/to/model.pt` to load your model for testing or further training. You can also set some hyperparameters like `--batch_size 32`, `--lr 5e-5` and `--epsilon 0.95`.
