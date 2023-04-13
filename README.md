@@ -23,3 +23,4 @@ bash main.sh x
 ```
 
 x means how many episodes you want in the training process. If you are running the testing process, you can choose any x.
+
