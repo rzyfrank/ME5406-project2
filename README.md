@@ -3,8 +3,8 @@ This is the code for NUS ME5406 Project2. Our team members are: Zhiyao Ren, Jiaw
 
 The goal of our project is to train the carts to move forward on the straights, 45 degree bend, 90 degree bend and 135 degree bend using deep reinforcement learning algorithms. And can complete our randomly generated complete track. The example of the track is shown below:
 
-<p align="left">
-  <img src="https://github.com/rzyfrank/ME5406-project2/tree/main/lib/track.png" width='10%' height='10%'/>
-</p>
-
-![image](https://github.com/rzyfrank/ME5406-project2/tree/main/lib/track.png)
+## Installation
+Clone this repository and navigate to it in your terminal. Then run:
+'''
+pip install -r requirements.txt
+'''
