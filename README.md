@@ -9,3 +9,8 @@ Clone this repository and navigate to it in your terminal. Then run:
 ```
 pip install -r requirements.txt
 ```
+
+## Design track
+You need to change the `turning_point` in `main.py` before training or testing.
+
+You can use `lib/create_track` to help you visualize the track and try to manually move forward on it.
