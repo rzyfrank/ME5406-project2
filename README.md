@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 ## Design track
-You need to change the `turning_point` in `main.py` before training or testing. The track should start in `(400, 500)` and the width and height of the track image should be at least 500 larger than the maximum values of x and y in `turning_point`. You can set `--track_w` and `--track_h` to change the width and height of the track image. 
+You need to change the `turning_point` in `main.py` before training or testing. The track should start in `(400, 500)` and the width and height of the track image should be at least 500 larger than the maximum values of x and y in `turning_point`. You can set `--track_w` and `--track_h` to change the width and height of the track image. You can choose to start your track horizontally or vertically.
 
 You can use `lib/create_track` to help you visualize the track and try to manually move forward on it.
 
