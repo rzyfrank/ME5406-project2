@@ -14,3 +14,12 @@ pip install -r requirements.txt
 You need to change the `turning_point` in `main.py` before training or testing.
 
 You can use `lib/create_track` to help you visualize the track and try to manually move forward on it.
+
+## Running the code
+You can running the training or testing code by:
+
+```
+bash main.sh x
+```
+
+x means how many episodes you want in the training process. If you are running the testing process, you can choose any x.
