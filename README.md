@@ -7,3 +7,4 @@ The goal of our project is to train the carts to move forward on the straights, 
   <img src="https://github.com/rzyfrank/ME5406-project2/tree/main/lib/track.png" width='10%' height='10%'/>
 </p>
 
+![image](https://github.com/rzyfrank/ME5406-project2/tree/main/lib/track.png)
