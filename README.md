@@ -27,7 +27,7 @@ x means how many episodes you want in the training process. If you are running t
 You can set ip this run in `main.sh`. you should set `--type Train` for training or set `--type Test` for testing. You can select to algorithm '--algorithm DQN'. We support DQN, DoubleDQN and DuelingDQN in our code. You can use `--resume_checkpoint path/to/model.pt` to load your model for testing or further training. You can also set some hyperparameters like `--batch_size 32`, `--lr 5e-5` and `--epsilon 0.95`.
 
 ## Test our code
-You can download our trained model [[checkpoint]([https://openaipublic.blob.core.windows.net/diffusion/march-2021/imagenet64_cond_270M_250K.pt](https://drive.google.com/drive/folders/19h5doLD4dR8IcrVsNhTK_q6gophP124X?usp=share_link))]. You can random choose a `turning_point` in `main.py`. This is a model for DuelingDQN, please set following in `main.sh`:
+You can download our trained model [[checkpoint](https://drive.google.com/drive/folders/19h5doLD4dR8IcrVsNhTK_q6gophP124X?usp=share_link)]. You can random choose a `turning_point` in `main.py`. This is a model for DuelingDQN, please set following in `main.sh`:
 
 ```
 --algorithm DuelingDQN --type Test --resume_checkpoint path/to/model.pt --track_h 1300 --track_w 2100
