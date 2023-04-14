@@ -157,7 +157,7 @@ if __name__ == '__main__':
 
     #Choose the angle and speed
     angle_map = [angle for angle in range(-15,20,5)]
-    speed_map = [20, -10, -5, 5, 10, 15, 20]
+    speed_map = [-10, -5, 5, 10, 15, 20, 25]
     action_map = []
     for speed in speed_map:
         for angle in angle_map:
